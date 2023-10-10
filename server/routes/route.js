@@ -5,12 +5,12 @@ const employee = require("../controller/controller")
 route.post("/createUser", employee.addNewUser)
 route.post("/createAllUser", employee.addAllNewUser)
 route.get("/finduser", employee.findUser)
-route.get("/findsalary", employee.findSalary)
-route.get("/findexp", employee.findUserExperience)
-route.get("/findge", employee.findUserGradExp)
-route.put("/updatesal", employee.UpdateUser)
-route.delete("/delsing", employee.DeleteSingleUser)
-route.delete("/delall", employee.DeleteAllUser)
+route.get("/findusersalary", employee.findSalary)
+route.get("/finduserexp", employee.findUserExperience)
+route.get("/findusergrndexp", employee.findUserGradExp)
+route.put("/updateusersalary", employee.UpdateUser)
+route.delete("/deletesingleuser", employee.DeleteSingleUser)
+route.delete("/deleteuserall", employee.DeleteAllUser)
 
 
 
